@@ -40,22 +40,6 @@ cpu_average_price = (int(ryans_cpu_price) + int(start_tech_cpu_price) + int(sky_
 
 # print(cpu_price_string, file_name)
 
-# sending report via whatsapp
-
-whatsapp_con = input("Do you want to send this report in your whatsapp?(y/n): ")
-
-if whatsapp_con == "y" or "Y":
-    phone_number = input('Enter your phone number: ')
-
-    # getting current hour and minute
-    time = datetime.now()
-
-    hour = time.strftime("%H")
-    minute = time.strftime("%M")
-
-    pywhatkit.sendwhatmsg(phone_number, report_string, time.hour, time.minute+1, 15, True)
-    print(f'Whatsapp message sent to {phone_number}')
-
 # Saving File
 
 
