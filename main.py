@@ -56,6 +56,20 @@ ssd_average_prise = (int(ryans_ssd_prise)+ int(star_tech_ssd_prise)+ int(sky_lan
 
 
 
+# HDD Parts
+
+ryans_hdd_prise = ryans.ryans_price_check("https://www.ryanscomputers.com/seagate-barracuda-1tb-35-inch-sata-7200rpm-desktop-hdd-st1000dm010")
+
+star_tech_hdd_prise = star_tech.star_tech_price_check("https://www.startech.com.bd/seagate-1tb-barracuda")
+
+sky_land_hdd_prise = sky_land.sky_land_price_check("https://www.skyland.com.bd/product/seagate-internal-1tb-sata-barracuda-hdd/")
+
+netstar_hdd_prise = netstar.netstar_price_check("https://www.netstar.com.bd/404")
+
+hdd_average_prise = (int(ryans_hdd_prise)+ int(sky_land_hdd_prise)) //2
+
+
+
 
 report_string = f"              CPU         \n"\
                 f"Intel 12th Gen Core i5-12400 Alder Lake Processor\n" \
@@ -83,6 +97,17 @@ report_string = f"              CPU         \n"\
                 f"Sky Land: {sky_land_ssd_prise}\n"\
                 f"Netstar: {netstar_ssd_prise}\n\n"\
                 f"Average RAM Prise {ssd_average_prise}\n\n\n"\
+                f"**************************************************\n\n\n"\
+                f"          HDD         \n"\
+                f"Seagate Barracuda 7200RPM 1TB Desktop Hard disk(Internal)\n"\
+                f"******************************\n" \
+                f"Ryans: {ryans_hdd_prise}\n"\
+                f"Star Tech: {star_tech_hdd_prise} [BUG Error]!\n"\
+                f"Sky Land: {sky_land_hdd_prise}\n"\
+                f"Netstar: {netstar_hdd_prise}\n\n"\
+                f"Average RAM Prise {hdd_average_prise}\n\n\n"\
+
+
 
 
 

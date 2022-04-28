@@ -13,7 +13,7 @@ def netstar_price_check(url):
                 ",", "")))
 
         if "Out of stock" in request.text:
-            return "Out Of Stock!"
+            return "Not Available Currently!"
 
         return price
 

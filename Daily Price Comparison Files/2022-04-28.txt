@@ -23,3 +23,31 @@ Netstar: 3700
 Average RAM Prise 3562
 
 
+**************************************************
+
+
+          SSD         
+Team MP33 256GB M.2 PCIe SSD
+******************************
+Ryans: 3600
+Star Tech: 3600
+Sky Land: 3600
+Netstar: 4200
+
+Average RAM Prise 3750
+
+
+**************************************************
+
+
+          HDD         
+Seagate Barracuda 7200RPM 1TB Desktop Hard disk(Internal)
+******************************
+Ryans: 3600
+Star Tech: To Be Announced! [BUG Error]!
+Sky Land: 3600
+Netstar: None
+
+Average RAM Prise 3600
+
+

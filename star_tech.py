@@ -20,4 +20,6 @@ def star_tech_price_check(url):
     except:
 
         return "To Be Announced!"
+    
+    
 
