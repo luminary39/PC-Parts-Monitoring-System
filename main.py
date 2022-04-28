@@ -25,7 +25,7 @@ start_tech_cpu_price = star_tech.star_tech_price_check(
 sky_land_cpu_price = sky_land.sky_land_price_check(
     "https://www.skyland.com.bd/product/intel-core-i5-12400-gen-processor/")
 
-cpu_average_price = (ryans_cpu_price + start_tech_cpu_price + sky_land_cpu_price) // 3
+cpu_average_price = (int(ryans_cpu_price) + int(start_tech_cpu_price) + int(sky_land_cpu_price)) // 3
 
 
 
@@ -40,6 +40,20 @@ sky_land_ram_prise = sky_land.sky_land_price_check("https://www.skyland.com.bd/p
 netstar_ram_prise = netstar.netstar_price_check("https://www.netstar.com.bd/product/corsair-vengeance-lpx-8gb-3200mhz-ddr4-desktop-ram/")
 
 ram_average_prise = (int(ryans_ram_prise) + int(star_tech_ram_prise) + int(sky_land_ram_prise) + int(netstar_ram_prise)) // 4
+
+
+# SSD Part
+
+ryans_ssd_prise = ryans.ryans_price_check("https://www.ryanscomputers.com/team-mp33-256gb-m.2-2280-nvme-pcie-ssd")
+
+star_tech_ssd_prise = star_tech.star_tech_price_check("https://www.startech.com.bd/team-mp33-256gb-ssd")
+
+sky_land_ssd_prise = sky_land.sky_land_price_check("https://www.skyland.com.bd/product/team-mp33-256gb-m2-ssd/")
+
+netstar_ssd_prise = netstar.netstar_price_check("https://www.netstar.com.bd/product/team-mp33-256gb-m-2-pcie-ssd/")
+
+ssd_average_prise = (int(ryans_ssd_prise)+ int(star_tech_ssd_prise)+ int(sky_land_ssd_prise)+ int(netstar_ssd_prise))//4
+
 
 
 
@@ -60,9 +74,15 @@ report_string = f"              CPU         \n"\
                 f"Sky Land: {sky_land_ram_prise}\n"\
                 f"Netstar: {netstar_ram_prise}\n\n"\
                 f"Average RAM Prise {ram_average_prise}\n\n\n"\
-
-
-cpu_average_price = (int(ryans_cpu_price) + int(start_tech_cpu_price) + int(sky_land_cpu_price)) // 3
+                f"**************************************************\n\n\n"\
+                f"          SSD         \n"\
+                f"Team MP33 256GB M.2 PCIe SSD\n"\
+                f"******************************\n" \
+                f"Ryans: {ryans_ssd_prise}\n"\
+                f"Star Tech: {star_tech_ssd_prise}\n"\
+                f"Sky Land: {sky_land_ssd_prise}\n"\
+                f"Netstar: {netstar_ssd_prise}\n\n"\
+                f"Average RAM Prise {ssd_average_prise}\n\n\n"\
 
 
 
