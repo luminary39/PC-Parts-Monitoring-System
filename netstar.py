@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 
 
-def netstar_price_checker(url):
+def netstar_price_check(url):
     try:
         request = requests.get(url)
 
@@ -22,4 +22,4 @@ def netstar_price_checker(url):
         pass
 
 
-netstar_price_checker("https://www.netstar.com.bd/product/gigabyte-aorus-geforce-rtx-2080-ti-graphics-card/")
+

@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 
 
-def sky_land_price_checker(url):
+def sky_land_price_check(url):
 
     try:
 
