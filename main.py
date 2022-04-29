@@ -56,7 +56,7 @@ ssd_average_prise = (int(ryans_ssd_prise)+ int(star_tech_ssd_prise)+ int(sky_lan
 
 
 
-# HDD Parts
+# HDD Part
 
 ryans_hdd_prise = ryans.ryans_price_check("https://www.ryanscomputers.com/seagate-barracuda-1tb-35-inch-sata-7200rpm-desktop-hdd-st1000dm010")
 
@@ -67,6 +67,20 @@ sky_land_hdd_prise = sky_land.sky_land_price_check("https://www.skyland.com.bd/p
 netstar_hdd_prise = netstar.netstar_price_check("https://www.netstar.com.bd/404")
 
 hdd_average_prise = (int(ryans_hdd_prise)+ int(sky_land_hdd_prise)) //2
+
+
+# Motherboard part
+
+ryans_mb_prise = ryans.ryans_price_check("https://www.ryanscomputers.com/gigabyte-b660m-ds3h-ax-wi-fi-6-12th-gen-intel-motherboard")
+
+star_tech_mb_prise = star_tech.star_tech_price_check("https://www.startech.com.bd/gigabyte-b660m-ds3h-ax-ddr4-motherboard")
+
+sky_land_mb_prise  = sky_land.sky_land_price_check("https://www.skyland.com.bd/product/gigabyte-b660m-ds3h-ax-ddr4-motherboard/")
+
+netstar_mb_prise = netstar.netstar_price_check("https://www.netstar.com.bd/404")
+
+mb_average_prise = (int(ryans_mb_prise)+ int(star_tech_mb_prise)+ int(sky_land_mb_prise)) //3
+
 
 
 
@@ -106,6 +120,14 @@ report_string = f"              CPU         \n"\
                 f"Sky Land: {sky_land_hdd_prise}\n"\
                 f"Netstar: {netstar_hdd_prise}\n\n"\
                 f"Average RAM Prise {hdd_average_prise}\n\n\n"\
+                f"          Motherboard         \n"\
+                f"Gigabyte B660M DS3H AX DDR4 12th Gen Micro ATX Motherboard\n"\
+                f"******************************\n" \
+                f"Ryans: {ryans_mb_prise}\n"\
+                f"Star Tech: {star_tech_mb_prise}\n"\
+                f"Sky Land: {sky_land_mb_prise}\n"\
+                f"Netstar: {netstar_mb_prise}\n\n"\
+                f"Average RAM Prise {mb_average_prise}\n\n\n"\
 
 
 
