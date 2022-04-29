@@ -5,7 +5,7 @@ import sky_land
 import netstar
 from datetime import date, datetime
 import os
-import pywhatkit
+
 
 # File name
 
